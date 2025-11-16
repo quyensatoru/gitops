@@ -1,5 +1,5 @@
 structure helm chart for 1 server manage many chart
-``gitops/
+```gitops/
  ├── apps/
  │    ├── api/
  │    │    ├── Chart.yaml
@@ -29,4 +29,4 @@ structure helm chart for 1 server manage many chart
       └── clientA/
            ├── api/values.yaml
            └── cms/values.yaml
-``
+```
