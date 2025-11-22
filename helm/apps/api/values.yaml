@@ -56,4 +56,9 @@ rabbitmq:
     enabled: false
   service:
     port: 5672
+infisical:
+  hostAPI: "https://app.infisical.com/api"
+  resyncInterval: "60"
+  identityId: "1e1398c1-683d-454a-92ff-96c173694523"
+  serviceAccountName: "infisical-sa"
 
