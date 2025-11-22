@@ -61,4 +61,8 @@ infisical:
   resyncInterval: "60"
   identityId: "1e1398c1-683d-454a-92ff-96c173694523"
   serviceAccountName: "infisical-sa"
+  projectSlug: "golang_tutorial"
+  envSlug: "dev"
+  secretsPath: "/test-1"
+  recursive: true
 
