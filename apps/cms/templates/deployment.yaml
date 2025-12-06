@@ -21,7 +21,11 @@ spec:
         ports:
           - containerPort: {{ .Values.service.targetPort }}
         envFrom:
+        {{- if .Values.configmap.enabled }}
           - configMapRef:
-             name: {{ include "app.fullname" . }}-config
+              name: {{ include "app.fullname" . }}-config
+        {{- end }}
+        {{- if .Values.secret.enabled }}
           - secretRef:
-             name: {{ include "app.fullname" . }}-secret
+              name: {{ include "app.fullname" . }}-secret
+        {{- end }}

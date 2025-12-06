@@ -10,6 +10,12 @@ service:
   port: 80
   targetPort: 3000
 
+configmap:
+  enabled: false
+
+secret:
+  enabled: false
+
 ingress:
   enabled: false
   className: nginx
