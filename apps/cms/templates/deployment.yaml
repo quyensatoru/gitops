@@ -8,7 +8,7 @@ metadata:
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
-    matchLavels:
+    matchLabels:
       app: {{ include "app.name" . }}
   template:
     metadata:
