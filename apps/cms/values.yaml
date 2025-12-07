@@ -1,9 +1,9 @@
 image:
   repository: quyensatoru/blocker_cms
-  tag: 1.1.1
+  tag: 1.1.0
   pullPolicy: Always
 
-replicaCount: 3
+replicaCount: 1
 
 service:
   type: NodePort
@@ -14,7 +14,7 @@ configmap:
   enabled: false
 
 secret:
-  enabled: false
+  enabled: true
 
 ingress:
   enabled: false
