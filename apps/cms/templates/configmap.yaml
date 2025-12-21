@@ -7,3 +7,4 @@ data:
 {{- range $key, $value := .Values.appConfig }}
   {{ $key }}: "{{ $value }}"
 {{- end }}
+  API_HOST: "{{ .Release.Name }}-api"

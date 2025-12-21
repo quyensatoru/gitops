@@ -7,3 +7,11 @@ data:
 {{- range $key, $value := .Values.appConfig }}
   {{ $key }}: "{{ $value }}"
 {{- end }}
+  RABBITMQ_HOST: "{{ .Release.Name }}-rabbitmq"
+  RABBITMQ_PORT: "5672"
+  RABBITMQ_USER: "{{ .Values.rabbitmq.auth.username }}"
+  RABBITMQ_PASSWORD: "{{ .Values.rabbitmq.auth.password }}"
+  REDIS_HOST: "{{ .Release.Name }}-redis"
+  REDIS_PORT: "6379"
+  MONGODB_HOST: "{{ .Release.Name }}-mongodb"
+  MONGODB_PORT: "27017"

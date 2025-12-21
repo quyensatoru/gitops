@@ -11,7 +11,8 @@ service:
   targetPort: 3000
 
 configmap:
-  enabled: false
+  enabled: true
+appConfig:
 
 secret:
   enabled: true

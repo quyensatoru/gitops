@@ -58,7 +58,8 @@ rabbitmq:
     port: 5672
 
 configmap:
-  enabled: false
+  enabled: true
+appConfig:
 
 secret:
   enabled: true
