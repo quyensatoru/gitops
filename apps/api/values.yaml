@@ -11,7 +11,7 @@ service:
   targetPort: 3000
 
 ingress:
-  enabled: false
+  enabled: true
   className: nginx
   host: x.mida-app.io
   tls: false
