@@ -1,0 +1,19 @@
+apiVersion: v2
+name: fraud-api-chart
+description: A Helm chart for fraud api
+version: 0.1.0
+appVersion: "1.0.0"
+type: application
+dependencies:
+  - name: rabbitmq
+    version: 14.x.x
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: rabbitmq.enabled
+  - name: redis
+    version: 19.x.x
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: redis.enabled
+  - name: mongodb
+    version: 15.x.x
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: mongodb.enabled
